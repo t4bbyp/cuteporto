@@ -1,4 +1,4 @@
-           fetch("/../jsons/web_jsons.json")
+           fetch("../jsons/web_jsons.json")
                     .then((response) => response.json())
                     .then(data => {
                       const levels = data.levels;
