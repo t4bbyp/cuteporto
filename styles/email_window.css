@@ -1,0 +1,74 @@
+
+#email-window {
+    min-width: 300px;
+    width: 20%;
+    background: #c0fdff;
+    padding: 0;
+    border-radius: 20px;
+    border: 5px solid #deaaff;
+    box-shadow: 0 0 5px black;
+    opacity: 1;
+    font-family: 'Space Grotesk';
+}
+
+.email-tab {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.email-navbar {
+    width: 100%;
+    height: auto;
+    padding: 6px;
+    background: #deaaff;
+    
+}
+
+.email-close {
+  width: 22px;
+  height: 22px;
+  background: #fc5d5f;
+  border-radius: 10px;
+  cursor: url(/media/cursor_big.png), auto;
+  border: 2px solid white;
+  float: right;
+  margin-right: 5px;
+}
+
+.email-stuff {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-stuff > p {
+    background: #7f99bd;
+    color: white;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 2px;
+}
+
+.email-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Space Grotesk';
+}
+
+.do-email {
+    min-width: 80px;
+    padding: 10px;
+    background: #b9fbc0;
+    border: 3px solid #a2d2ff;
+    text-decoration: none;
+    color: black;
+    cursor: url(/media/cursor_big.png), auto;
+    border-radius: 10px;
+    font-family: 'Space Grotesk';
+}

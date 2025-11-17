@@ -1,0 +1,147 @@
+.hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #bbd0ff;
+}
+
+
+.hobby-ttl {
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-family: 'Silkscreen';
+}
+
+.hobbies_container {
+    width: 85%;
+    max-height: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hobby-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.hobby-list input {
+    display: none;
+}
+
+.hobby-list label {
+    padding: 20px;
+    font-size: 1.5vmin;
+    transition: all 0.4s ease-in-out;
+    cursor: url(/media/cursor_big.png), auto;
+}
+
+.hobby-list label:hover {
+    padding-left: 50px;
+    background-image: linear-gradient(90deg,rgba(206, 244, 255, 1) 0%, rgba(206, 244, 255, 1) 30%, rgba(255, 255, 255, 1) 90%);
+    color: white;
+
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hobby-list input:checked + label {
+    background-image: linear-gradient(90deg,rgba(206, 244, 255, 1) 0%, rgba(206, 244, 255, 1) 30%, rgba(255, 255, 255, 1) 90%);
+    padding-left: 50px;
+    font-size: 1.8vmin;
+    color: white;
+
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hobby-desc {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    flex-shrink: 1;
+}
+
+.hobbies:has(#hobby1:checked) .hobby-desc .hobby1 {
+  opacity: 1;
+  z-index: 10;
+}
+.hobbies:has(#hobby2:checked) .hobby-desc .hobby2{
+  opacity: 1;
+  z-index: 10;
+}
+.hobbies:has(#hobby3:checked) .hobby-desc .hobby3 {
+  opacity: 1;
+  z-index: 10;
+}
+.hobbies:has(#hobby4:checked) .hobby-desc .hobby4 {
+  opacity: 1;
+  z-index: 10;
+}
+.hobbies:has(#hobby5:checked) .hobby-desc .hobby5 {
+  opacity: 1;
+  z-index: 10;
+}
+.hobbies:has(#hobby6:checked) .hobby-desc .hobby6 {
+  opacity: 1;
+  z-index: 10;
+}
+
+.hobby-desc > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.hobby-img {
+    flex: 0 1 auto;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width: 100%;
+    min-width: 50px;
+    width: 10vw;
+}
+
+.hobby-text {
+    flex: 1 0 auto;
+    padding: 3vmin;
+    text-align: left;
+    width: 80%;
+    overflow: auto;
+    height: 30%;
+    font-size: 1.5vmin;
+}
+
+.hobby1 .hobby-img {
+    transform: rotateY(180deg);
+}
+
+.hobby5 .hobby-img {
+    padding-bottom: 20px;
+}

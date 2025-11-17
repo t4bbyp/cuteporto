@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bachelor's Thesis</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+        href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+        rel="stylesheet"
+        />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/thesis.css"/>
+        <link rel="stylesheet" href="/styles/the-small-carousel.css"/>
+
+        <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=3.12.6"></script>
+        <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+        <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
+        
+    </head>
+
+    <body>
+        <div class="geometric-background" id="geometric-background"></div>
+        <div class="particles" id="particles"></div>
+        <script src="/../js/particles.js"></script>
+        <div class="gradient-overlay"></div>
+
+        <div class="main">
+            <h1 class="ttl">Bachelor's Thesis</h1>
+
+            <a href="../index.html" class="back-btn"></a>
+
+            <div class="project-tab">
+                <div class="project-base">
+                    <button class="close_btn"></button>
+                                <h1 class="project-ttl">Smart Vehicle Localization System in Parking Areas</h1>
+                                <span class="project-status">completed</span>
+                                
+                                <div class="project-info">
+                                    
+                                    <div class="carousel">
+                                        <div class="container">
+
+                                            <!-- Full-width images with number text -->
+                                            <div class="img-container">
+                                                <img src="/../media/projects/thesis/plan.webp" class="imege">
+                                            </div>
+
+                                            <!-- Image text -->
+                                            <div class="caption-container">
+                                                <p id="caption"></p>
+                                            </div>
+
+                                            <!-- Thumbnail images -->
+                                            
+                                              <div class="row">
+                                                <button class="small-prev">&#10094;</button>
+                                                <div class="wrapper">
+                                                    <div class="column">
+                                                        <img src="/../media/projects/thesis/plan.webp" class="demo cursor box_inner">
+                                                    </div>
+                                                    <div class="column">
+                                                        <img src="/../media/projects/thesis/macheta.webp" class="demo cursor box_inner">
+                                                    </div>
+                                                    <div class="column">
+                                                        <img src="/../media/projects/thesis/parkcam.webp" class="demo cursor box_inner">
+                                                    </div>
+                                                </div>
+                                                <button class="small-next">&#10095;</button>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="project-desc">
+                                        <div class="desc">
+                                            <p><b>Purpose:</b> University thesis project.</p>
+
+                                                <p>
+                                                <b>Summary:</b>  
+                                                Urbanization has led to an increase in vehicles and increasingly complex parking environments, making it difficult for users to locate their cars in large lots such as those at shopping malls, airports, or public venues. This project proposes an Internet of Things (IoT)-based localization system designed to help users find their parked cars easily.  
+
+                                                <br><br>
+                                                The system uses HC-SR04 ultrasonic sensors for vehicle detection and ESP32-CAM modules for image capture. License plate recognition is achieved through image processing and optical character recognition using OpenCV and Tesseract OCR. All collected data is stored in a centralized MySQL database. Users can retrieve the location of their vehicle through a dedicated Android application by entering their license plate number.  
+
+                                                <br><br>
+                                                <i>* The system is currently designed for numbered parking lots, with each space identified by a unique code or number.</i>
+                                            </p>
+
+                                            <p><b>Software Components:</b></p>
+                                                <ul style="padding-left: 3vw;">
+                                                <li>
+                                                    <b>ParkCam (PC GUI):</b> A Python-based desktop interface built with PySimpleGUI. It displays real-time images and handles tasks such as MQTT communication with AWS EC2, image processing, OCR, API interaction, and database updates. Asynchronous functions and threading are used to manage the simultaneous image streams from multiple cameras, ensuring efficient processing and display.
+                                                </li>
+                                                <li>
+                                                    <b>AWS EC2 (Linux):</b> Hosts the Mosquitto MQTT broker to facilitate image transmission between the ESP32-CAM and ParkCam.
+                                                </li>
+                                                <li>
+                                                    <b>Find&Drive (Android App):</b> Allows users to register their vehicles and retrieve the location code associated with a license plate.<br>
+                                                    The mobile app can be found <a href="android.html">here</a>.
+                                                </li>
+                                                <li>
+                                                    <b>Database & Backend:</b> A MySQL database managed with phpMyAdmin, and PHP-based REST APIs used to handle data requests from the PC app and Android app.
+                                                    <ul>
+                                                    <li><i>Note: Initially, Firebase Realtime Database was used, but later replaced with MySQL to better support structured data and more complex queries.</i></li>
+                                                    </ul>
+                                                </li>
+                                                </ul>
+                                            <p class="m-0"><b>Technologies:</b> VS Code, PlatformIO, C++ (Arduino), AWS EC2, Mosquitto MQTT Broker, Python, PySimpleGUI, OpenCV, Tesseract OCR, PHP, cPanel, REST APIs, MySQL, phpMyAdmin, Android Studio, Java (Android), Volley Library, Material Design 3.</p>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+
+            </div>
+
+        <script src="/../js/small-carousel.js"></script>
+
+        
+
+    </body>
+
+</html>
