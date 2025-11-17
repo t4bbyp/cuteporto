@@ -101,7 +101,7 @@
 .todo_expand {
   background-color: #9381ff;
   color: #fff;
-  cursor: url("media/cursor_big.png"), auto !important;
+  cursor: url("../media/cursor_big.png"), auto !important;
   padding: 18px;
   width: 100%;
   border: none;
