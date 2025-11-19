@@ -33,8 +33,10 @@
         <div class="main">
             <h1 class="ttl">Bachelor's Thesis</h1>
 
+            <!--
             <a href="../index.html" class="back-btn"></a>
-
+            -->
+            
             <div class="project-tab">
                 <div class="project-base">
                     <button class="close_btn"></button>
@@ -121,7 +123,11 @@
             </div>
 
         <script src="../js/small-carousel.js"></script>
-
+        <script>
+            document.querySelector(".close_btn").onclick = function () {
+                location.href = "../index.html";
+            };
+        </script>
         
 
     </body>
