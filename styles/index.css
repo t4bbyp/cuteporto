@@ -242,6 +242,8 @@ body {
 
   background-repeat: no-repeat;
   background-position: 80% center;
+
+  color: transparent;
 }
 
 .bio_btns label:nth-of-type(1) {
@@ -334,6 +336,10 @@ body {
 }
 
 /* ----- BUBBLES ----- */
+
+.boton {
+  color: transparent;
+}
 
 .boton:hover > div {
   display: block;
