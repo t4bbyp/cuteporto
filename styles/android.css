@@ -195,6 +195,7 @@ body {
       transition: transform 0.5s, background-size 5s ease-in-out;
       z-index: 10;
       border-radius: 10px;
+      border: none !important;
     }
 
     .level:hover {
