@@ -34,6 +34,7 @@
                         d.style.background = `url(${projects[l.id-1].thumbnail.link})`;
                         d.style.aspectRatio = `${projects[l.id-1].thumbnail.aspectRatio}`;
                         d.style.width = `${projects[l.id-1].thumbnail.width}`;
+                        d.setAttribute("aria-label", `Open project ${projects[l.id - 1].name}`);
 
                         //Open project info tab
                         d.addEventListener('click', () => {
