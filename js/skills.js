@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         skillLi.classList.add("skill-item");
                         skillLi.innerHTML = `
                             <span class="skilly">
-                              <img src="${skill.icon}" class="skill-img">
+                              <img src="${skill.icon}" class="skill-img" alt="${skill.name}">
                               <span class="skill-name">${skill.name}</span>  
                             </span>
                           `;
