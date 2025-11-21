@@ -45,7 +45,7 @@
                             const projy = document.createElement("div");
                             projy.classList.add("project-base");
                             projy.innerHTML = `
-                                <button class="close_btn"></button>
+                                <button class="close_btn" aria-label="Close project tab"></button>
                                 <h1 class="project-ttl">${projects[id].name}</h1>
                                 <span class="project-status">${projects[id].status}</span>
                                 
